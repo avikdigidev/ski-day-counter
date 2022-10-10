@@ -50,10 +50,12 @@ in Mutation we have to return something, in here we are returning SkiDay but it 
 /*const resolvers = {
 
 }*/
-
+const mocks = {
+    Date: () => "1/2/2025"
+}
 const server = new ApolloServer({
     typeDefs,
-    mocks: true
+    mocks: mocks
 })
 
 server.listen().then(({url}) => console.log(`Server running at ${url}`));
