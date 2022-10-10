@@ -53,7 +53,7 @@ in Mutation we have to return something, in here we are returning SkiDay but it 
 const mocks = {
     Date: () => "1/2/2025",
     String: () => "Cool Data",
-    Query: () =>  ({ allDays: () => new MockList(8) })
+    Query: () =>  ({ allDays: () => new MockList([1,15]) })
 };
 const server = new ApolloServer({
     typeDefs,
