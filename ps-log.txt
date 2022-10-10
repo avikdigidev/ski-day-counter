@@ -1,0 +1,65 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Try the new cross-platform PowerShell https://aka.ms/pscore6
+
+PS C:\Windows\system32> cd D:\Projects\DevOps\LinkedinLearning-graphQL
+PS D:\Projects\DevOps\LinkedinLearning-graphQL> mkdir ski-day-counter
+
+
+    Directory: D:\Projects\DevOps\LinkedinLearning-graphQL
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        10-10-2022     20:36                ski-day-counter
+
+
+PS D:\Projects\DevOps\LinkedinLearning-graphQL> cd ski-day-counter
+PS D:\Projects\DevOps\LinkedinLearning-graphQL\ski-day-counter> npm init -y
+npm WARN config global `--global`, `--local` are deprecated. Use `--location=global` instead.
+Wrote to D:\Projects\DevOps\LinkedinLearning-graphQL\ski-day-counter\package.json:
+
+{
+  "name": "ski-day-counter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
+
+
+PS D:\Projects\DevOps\LinkedinLearning-graphQL\ski-day-counter> npm install graphql apollo-server nodemon
+npm WARN config global `--global`, `--local` are deprecated. Use `--location=global` instead.
+
+added 166 packages, and audited 167 packages in 21s
+
+11 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+npm notice
+npm notice New major version of npm available! 7.24.0 -> 8.19.2
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v8.19.2
+npm notice Run npm install -g npm@8.19.2 to update!
+npm notice
+PS D:\Projects\DevOps\LinkedinLearning-graphQL\ski-day-counter> npm install -g npm@8.19.2
+npm WARN config global `--global`, `--local` are deprecated. Use `--location=global` instead.
+
+removed 229 packages, changed 21 packages, and audited 29 packages in 6s
+
+found 0 vulnerabilities
+PS D:\Projects\DevOps\LinkedinLearning-graphQL\ski-day-counter> code .
+code : The term 'code' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ code .
++ ~~~~
+    + CategoryInfo          : ObjectNotFound: (code:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS D:\Projects\DevOps\LinkedinLearning-graphQL\ski-day-counter> npm start
