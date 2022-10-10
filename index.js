@@ -39,7 +39,6 @@ const typeDefs = gql
 
         type Mutation {
             addDay(input: AddDayInput!): SkiDay
-
             removeDay(id: ID!): RemoveDayPayload!
         }
 
