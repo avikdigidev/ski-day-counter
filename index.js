@@ -18,10 +18,18 @@ const typeDefs = gql
             POWDER
             HEAVY
             ICE
-            THIN
+            THIN 
+        }
+        
+        type Mutation {
+
+            removeDay(id: ID!): SkiDay!
         }
 
     `;
+/*
+in Mutation we have to return something, in here we are returning SkiDay but it can be anything
+*/
 
 /*const resolvers = {
 
